@@ -22,9 +22,9 @@
 }
 
 /**
- Refactor - this is awful! Seriously.
- Should "move" the empty space around rather than move spaces into
- the empty one.
+ * Refactor - this is awful! Seriously.
+ * Should "move" the empty space around rather than move spaces into
+ * the empty one.
  */
 -(void)scramble:(int)n
 {
