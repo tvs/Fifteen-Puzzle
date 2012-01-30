@@ -15,6 +15,7 @@
 		8B81CA8614D71C24005CC9CF /* FifteenPuzzleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81CA8514D71C24005CC9CF /* FifteenPuzzleAppDelegate.m */; };
 		8B81CA8914D71C24005CC9CF /* FifteenPuzzleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81CA8814D71C24005CC9CF /* FifteenPuzzleViewController.m */; };
 		8B81CA8C14D71C24005CC9CF /* FifteenPuzzleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B81CA8A14D71C24005CC9CF /* FifteenPuzzleViewController.xib */; };
+		8B81CA9A14D723F9005CC9CF /* FifteenBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B81CA9914D723F9005CC9CF /* FifteenBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		8B81CA7514D71C24005CC9CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8B81CA7714D71C24005CC9CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B81CA7914D71C24005CC9CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8B81CA7D14D71C24005CC9CF /* FifteenPuzzle-Info.plist */ = {isa = PBXFileReference; path = "FifteenPuzzle-Info.plist"; sourceTree = "<group>"; };
+		8B81CA7D14D71C24005CC9CF /* FifteenPuzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FifteenPuzzle-Info.plist"; sourceTree = "<group>"; };
 		8B81CA7F14D71C24005CC9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B81CA8114D71C24005CC9CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8B81CA8314D71C24005CC9CF /* FifteenPuzzle-Prefix.pch */ = {isa = PBXFileReference; path = "FifteenPuzzle-Prefix.pch"; sourceTree = "<group>"; };
-		8B81CA8414D71C24005CC9CF /* FifteenPuzzleAppDelegate.h */ = {isa = PBXFileReference; path = FifteenPuzzleAppDelegate.h; sourceTree = "<group>"; };
+		8B81CA8314D71C24005CC9CF /* FifteenPuzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FifteenPuzzle-Prefix.pch"; sourceTree = "<group>"; };
+		8B81CA8414D71C24005CC9CF /* FifteenPuzzleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifteenPuzzleAppDelegate.h; sourceTree = "<group>"; };
 		8B81CA8514D71C24005CC9CF /* FifteenPuzzleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifteenPuzzleAppDelegate.m; sourceTree = "<group>"; };
-		8B81CA8714D71C24005CC9CF /* FifteenPuzzleViewController.h */ = {isa = PBXFileReference; path = FifteenPuzzleViewController.h; sourceTree = "<group>"; };
+		8B81CA8714D71C24005CC9CF /* FifteenPuzzleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifteenPuzzleViewController.h; sourceTree = "<group>"; };
 		8B81CA8814D71C24005CC9CF /* FifteenPuzzleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifteenPuzzleViewController.m; sourceTree = "<group>"; };
 		8B81CA8B14D71C24005CC9CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FifteenPuzzleViewController.xib; sourceTree = "<group>"; };
+		8B81CA9814D723F9005CC9CF /* FifteenBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifteenBoard.h; sourceTree = "<group>"; };
+		8B81CA9914D723F9005CC9CF /* FifteenBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifteenBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		8B81CA7B14D71C24005CC9CF /* FifteenPuzzle */ = {
 			isa = PBXGroup;
 			children = (
+				8B81CA9814D723F9005CC9CF /* FifteenBoard.h */,
+				8B81CA9914D723F9005CC9CF /* FifteenBoard.m */,
 				8B81CA8414D71C24005CC9CF /* FifteenPuzzleAppDelegate.h */,
 				8B81CA8514D71C24005CC9CF /* FifteenPuzzleAppDelegate.m */,
 				8B81CA8714D71C24005CC9CF /* FifteenPuzzleViewController.h */,
@@ -108,6 +113,7 @@
 				8B81CA6D14D71C24005CC9CF /* Sources */,
 				8B81CA6E14D71C24005CC9CF /* Frameworks */,
 				8B81CA6F14D71C24005CC9CF /* Resources */,
+				8B46CFE914D749AE00A1F72E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,6 +161,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B46CFE914D749AE00A1F72E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /etc/devme;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B81CA6D14D71C24005CC9CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -163,6 +185,7 @@
 				8B81CA8214D71C24005CC9CF /* main.m in Sources */,
 				8B81CA8614D71C24005CC9CF /* FifteenPuzzleAppDelegate.m in Sources */,
 				8B81CA8914D71C24005CC9CF /* FifteenPuzzleViewController.m in Sources */,
+				8B81CA9A14D723F9005CC9CF /* FifteenBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +297,7 @@
 				8B81CA9114D71C24005CC9CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
