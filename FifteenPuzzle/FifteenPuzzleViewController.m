@@ -97,11 +97,11 @@
                 break;
         }
         [UIView animateWithDuration:0.5 animations:^{sender.frame = buttonFrame;}];
-    }
-    
-    if ([board isSolved]) {
-        [self showCongratulations];
-        NSLog(@"Congratulations!");
+        
+        if ([board isSolved]) {
+            [self showCongratulations];
+            NSLog(@"Congratulations!");
+        }
     }
 }
 
@@ -115,6 +115,8 @@
     [message show];
 }
 
+// Shake events cause the game to "cheat" and move into a winning configuration
+// Mostly for testing, also because I wanted to win for once.
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
     if (event.subtype == UIEventSubtypeMotionShake) {
